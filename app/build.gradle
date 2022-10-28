@@ -43,4 +43,5 @@ dependencies {
 
     //QR Scanner
     implementation 'com.github.yuriy-budiyev:code-scanner:2.3.2'
+    implementation 'com.google.code.gson:gson:2.8.8'
 }
