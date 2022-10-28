@@ -1,8 +1,12 @@
 package com.pantherstudios.presentee;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
 import android.util.Log;
 import android.view.View;
@@ -13,6 +17,7 @@ import com.pantherstudios.presentee.Functions.DataGetSet;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final int MY_CAMERA_REQUEST_CODE = 100;
     private Button scanInButton;
     private Button scanOutButton;
     private Button sectionButton;
@@ -66,6 +71,12 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA)
+                == PackageManager.PERMISSION_DENIED) {
+            ActivityCompat.requestPermissions(MainActivity.this, new String[] {Manifest.permission.CAMERA}, MY_CAMERA_REQUEST_CODE);
+        }
+
     }
 
 }
