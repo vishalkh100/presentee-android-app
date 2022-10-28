@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        Intent myIntent = new Intent(MainActivity.this, ScannerActivity.class);
+                        Intent myIntent = new Intent(MainActivity.this, ScanOutActivity.class);
                         MainActivity.this.startActivity(myIntent);
                     }
                 }

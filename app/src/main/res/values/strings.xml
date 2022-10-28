@@ -9,4 +9,10 @@
     <string name="scan_out_time">SCAN OUT TIME</string>
     <string name="select_section">Select Section</string>
     <string name="selected_section_none">Selected Section: None</string>
+    <string name="welcome">WELCOME</string>
+    <string name="employee_marked_present">Employee Marked Present</string>
+    <string name="scanning">Scanning...</string>
+    <string name="scan_complete_please_wait">Scan Complete. Please wait...</string>
+    <string name="section_name">Section Name:</string>
+    <string name="name">Name</string>
 </resources>

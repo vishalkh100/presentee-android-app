@@ -20,6 +20,9 @@
         android:theme="@style/Theme.Presentee"
         tools:targetApi="31">
         <activity
+            android:name=".ScanOutActivity"
+            android:exported="false" />
+        <activity
             android:name=".SelectSectionActivity"
             android:exported="false" />
         <activity
